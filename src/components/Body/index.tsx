@@ -23,9 +23,9 @@ export default function BodyComponents() {
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-            Make money from <br />
+            La France <br />
             <Text as={'span'} color={'green.400'}>
-              your audience
+             va mal
             </Text>
           </Heading>
           <Text color={'gray.500'}>
