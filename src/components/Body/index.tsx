@@ -9,8 +9,16 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react'
+import { useState } from 'react';
 
 export default function BodyComponents() {
+
+  const [color, setColor] = useState(false);
+
+  const changeColor = () => {
+    setColor(color == false ? true : false)
+  }
+
   return (
     <>
       <Container maxW={'3xl'}>
@@ -40,13 +48,11 @@ export default function BodyComponents() {
             alignSelf={'center'}
             position={'relative'}>
             <Button
-              colorScheme={'green'}
-              bg={'green.400'}
+              bg={color == false ? 'green.400' : 'red.400'}
               rounded={'full'}
               px={6}
-              _hover={{
-                bg: 'green.500',
-              }}>
+              onClick={changeColor}
+            >
               Get Started
             </Button>
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
