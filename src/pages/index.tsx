@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavbarComponents from "@/components/Navbar"
 import BodyComponents from '@/components/Body'
 import FooterComponents from '@/components/Footer'
+import Carousel from '@/components/Carrousel'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <main>
         <NavbarComponents/>
+        <Carousel/>
         <BodyComponents/>
         <FooterComponents/>
       </main>
